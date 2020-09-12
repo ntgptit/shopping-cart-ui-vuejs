@@ -1,19 +1,14 @@
 <template>
-  <v-content>
-    <!-- Header component -->
-    <Header />
+  <v-main>
     <router-view />
     <Footer />
-  </v-content>
+  </v-main>
 </template>
 
 <script>
-// Include header component
-import Header from "../header/header";
 import Footer from "../footer/footer";
 export default {
   components: {
-    Header,
     Footer,
   },
 };

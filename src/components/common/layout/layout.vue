@@ -1,14 +1,17 @@
 <template>
   <v-app id="inspire">
+    <!-- Header component -->
+    <Header />
     <!-- Drawer component -->
     <Drawer />
     <!-- Header component -->
     <ViewRouter />
-    <!-- Header component -->
   </v-app>
 </template>
 
 <script>
+// Include header component
+import Header from "../header/header";
 // Include drawer component
 import Drawer from "../drawer/drawer";
 // import View router
@@ -18,6 +21,7 @@ export default {
   components: {
     Drawer,
     ViewRouter,
+    Header,
   },
   data: () => ({}),
 };
